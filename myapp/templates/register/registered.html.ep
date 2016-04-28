@@ -1,0 +1,3 @@
+% layout 'default';
+You successfully registered login '<%= $username %>.
+Your password is <%= $password  %>
