@@ -12,7 +12,7 @@ sub startup {
     $self->helper(users => sub { state $users = MyApp::Model::Users->new });
 
     my $r = $self->routes;
-    $r->any('/')->to('login#index')->name('index');
+    $r->any('/')->to('layouts#index')->name('index');
 
     my $logged_in = $r->under('/')->to('login#logged_in');
     $logged_in->get('/protected')->to('login#protected');
