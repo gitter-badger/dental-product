@@ -18,6 +18,8 @@ sub startup {
     $logged_in->get('/protected')->to('login#protected');
 
     $r->get('/logout')->to('login#logout');
+    $r->get('/login')->to('login#index');
+    $r->get('/register')->to('register#register');
 
 }
 1;

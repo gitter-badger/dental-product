@@ -1,6 +1,8 @@
 <html><head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--Google Web Fonts-->
+<link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
 <style>
    a:link {
     text-decoration: none;
@@ -21,6 +23,11 @@ a:active {
     text-decoration: none;
    color: #eee;
 }
+	body{
+		font-family: 'Bitter', serif;
+
+	}
+
   </style>
 </head>
 <body cz-shortcut-listen="true">
@@ -30,7 +37,7 @@ a:active {
     background-color: black;
 ">
 		<h1><strong>DENTAL PRODUCTS</strong></h1>
-		<h6><a href="">LOG IN </a> | <a href=""> REGISTER </a></h6>
+		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a></h6>
 	</div>
 </div>
   
