@@ -1,6 +1,27 @@
 <html><head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<style>
+   a:link {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:visited {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:hover {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:active {
+    text-decoration: none;
+   color: #eee;
+}
+  </style>
 </head>
 <body cz-shortcut-listen="true">
 <div class="container-fluid">
@@ -9,7 +30,7 @@
     background-color: black;
 ">
 		<h1><strong>DENTAL PRODUCTS</strong></h1>
-		
+		<h6><a href="">LOG IN </a> | <a href=""> REGISTER </a></h6>
 	</div>
 </div>
   
@@ -22,6 +43,8 @@
   <img src="http://iamprithaj.com/hygienic-items.png">
 <p>Floss</p>
  <img src="http://iamprithaj.com/dental-floss.png">
+<p>Mouthwash</p>
+<img src="http://iamprithaj.com/mouthwash.png"/>
   </div>
 </div>
 
