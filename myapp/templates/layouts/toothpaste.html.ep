@@ -1,3 +1,7 @@
+% my $dbh=$c->database->getHandle();                                                                                                                
+% my $sth=$dbh->prepare("SELECT productname, brand, unitprice, unitmeasure, description, quantity, instock FROM product WHERE category='toothpaste'");                 
+% $sth->execute; 
+
 <html><head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -51,6 +55,36 @@ a:active {
   <div class="jumbotron">
   <h3><strong>&#8220;I was never afraid of anything in the world except the dentist.&#8221; &#8212; Taylor Caldwell</strong></h3>
   <!--start of products-->
+<div class="container-fluid product">  
+<table class="table">
+    <thead>
+<tr>
+<th>Product Name: </th>
+<th>Brand: </th>
+<th>Unit Price: </th>
+<th>Unit Measure: </th>
+<th>Description: </th>
+<th>Quantity: </th>
+<th>Instock: </th>
+<th>Add item: </th>
+<th>Buy it now: </th>
+</tr>
+</thead>
+  
+    <tbody>
+  % while (my $row = $sth->fetchrow_arrayref) {                                                                                                
+        <tr>                         
+        % for my $data (@$row) {                                                                                                                    
+          <td><%= $data %></td><br>
+          % }
+        <td><button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button></td>
+        <td><button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>  </td>
+	</tr>
+    % }  
+   </tbody>
+</table>
+</div>
+
       <div class="container-fluid product">
         <h4><strong>Sensodyne Repair</strong></h4>
         <img src="http://iamprithaj.com/sensodyne-repair.jpg" style="width:100px;">

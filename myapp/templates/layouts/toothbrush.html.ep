@@ -68,7 +68,8 @@ a:active {
 <th>Description: </th>
 <th>Quantity: </th>
 <th>Instock: </th>
-<th>Add to item: </th>
+<th>Add item: </th>
+<th>Buy it now: </th>
 </tr>
 </thead>
   
@@ -79,11 +80,12 @@ a:active {
           <td><%= $data %></td><br>
           % }
         <td><button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button></td>
+	<td><button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button> </td>
 	</tr>
     % }  
    </tbody>
 </table>
-</div class>
+</div>
 
       <div class="container-fluid product">
         <h4><strong>Philips Sonicare</strong></h4>

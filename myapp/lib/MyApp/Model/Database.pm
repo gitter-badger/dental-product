@@ -66,19 +66,9 @@ sub showresults() {
 
     my $rv=$sth->execute();
     while (my @row = $sth->fetchrow_array) {
-#	my $category = $row[0];
-#	my $unitprice = $row[1];
-#	my $unitmeasure = $row[2];
-#	my $brand = $row[3];
-#	my $productname = $row[4];
-#	my $description = $row[5];
-#	my $quantity = $row[6];
-#	my $instock = $row[7];
-
-	print "Category: $row[0]  Unitprice: $row[1] Unitmeasure: $row[2] Brand: $row[3] Productname: $row[4] Description: $row[5] Quantity: $row[6] Instock: $row[7]\n";
     }
-    #die "Execute failed", $sth->errstr unless($rv);
-    #die "Execute failed", $sth->errstr if($sth->err);
+    die "Execute failed", $sth->errstr unless($rv);
+    die "Execute failed", $sth->errstr if($sth->err);
 }
 
 
