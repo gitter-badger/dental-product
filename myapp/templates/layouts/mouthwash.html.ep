@@ -1,0 +1,130 @@
+<html><head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--Google Web Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet" type="text/css">
+<style>
+   a:link {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:visited {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:hover {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:active {
+    text-decoration: none;
+   color: #eee;
+}
+	body{
+		font-family: 'Bitter', serif;
+
+	}
+  #white{
+
+  		-webkit-filter:invert(100%);
+  }
+
+  </style>
+</head>
+<body cz-shortcut-listen="true">
+<div class="container-fluid">
+	<div class="jumbotron text-center" style="
+    color: aliceblue;
+    background-color: black;
+">
+  		<img src="http://iamprithaj.com/mouthwash.png"/ id="white">
+		<h1><strong>Mouthwash</strong></h1>
+    <h2>Take a look at our wide variety of Mouthwash!</h2>
+		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a></h6>
+	</div>
+</div>
+
+<div class="container-fluid text-center">
+  <div class="jumbotron">
+  <h3><strong>&#8220;I was never afraid of anything in the world except the dentist.&#8221; &#8212; Taylor Caldwell</strong></h3>
+  <!--start of products-->
+      <div class="container-fluid product">
+        <h4><strong>Equate Blue Mint</strong></h4>
+        <img src="http://iamprithaj.com/bluemint.jpg" style="width:100px;">
+        <h5><strong>Price</strong> $5.54 </h5>
+        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
+        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
+
+      </div>
+          <div class="container-fluid product">
+        <h4>Listerine Original</h4>
+        <img src="http://iamprithaj.com/originallist.jpg" style="width:100px;">
+        <h5><strong>Price</strong> $5.97</h5>
+        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
+        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
+
+      </div>
+          <div class="container-fluid product">
+        <h4>Act Total Care</h4>
+        <img src="http://iamprithaj.com/act.jpg" style="width:100px;">
+        <h5><strong>Price</strong> $4.65</h5>
+        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
+        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
+
+      </div>
+          <div class="container-fluid product">
+        <h4>Colgate Total Advanced</h4>
+        <img src="http://iamprithaj.com/colwash.jpg" style="width:100px;">
+        <h5><strong>Price</strong> $5.96</h5>
+        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
+        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
+
+      </div>
+      <!--end of products-->
+
+      <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        <div class="modal-title" id="myModalLabel"><!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" border="0" alt="PayPal Logo"></a></td></tr></table><!-- PayPal Logo --></div>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+  <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Make Purchase</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<footer style="background-color:black; color:aliceblue;height: 129px;">
+  <div class="text-center" style="
+    padding-top: 18px;">
+    <h6>made with <strong>mojolicious</strong>&#169;</h6>
+    <p>by <strong>Prithaj, Danny, Rahul, Trevan</strong> and <strong>Sergio</strong> | State University of New York College at Plattsburgh</p>
+  </div>
+
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+</body></html>
