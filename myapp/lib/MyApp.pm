@@ -1,3 +1,6 @@
+use strict;
+use warnings;
+
 package MyApp;
 use Mojo::Base 'Mojolicious';
 
@@ -10,6 +13,7 @@ sub startup {
 
     $self->secrets(['Mojolicious rocks']);
     $self->helper(users => sub { state $users = MyApp::Model::Users->new });
+    $self->helper(database => sub { state $database = MyApp::Model::Database->new });
 
     my $r = $self->routes;
     $r->any('/')->to('layouts#index')->name('mainpage');
