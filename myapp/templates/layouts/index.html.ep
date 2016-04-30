@@ -40,6 +40,11 @@ a:active {
 
   }
 
+  #white{
+
+      -webkit-filter:invert(100%);
+  }
+
 
 
   </style>
@@ -50,6 +55,7 @@ a:active {
     color: aliceblue;
     background-color: black;
 ">
+    <img src="http://iamprithaj.com/smiling-tooth-with-hands.png"/ id="white">
 		<h1><strong>PSU Dental</strong></h1>
 		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a></h6>
 	</div>
@@ -57,7 +63,7 @@ a:active {
 
 <div class="container-fluid text-center">
   <div class="jumbotron">
-  <h1><strong>CATEGORY</strong></h1>
+  <h1><strong>Categories</strong></h1>
 <p>Toothbrush</p>
  <img src="http://iamprithaj.com/toothbrush.png">
 <p>Toothpaste</p>

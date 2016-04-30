@@ -55,7 +55,7 @@ a:active {
         <h4><strong>Listerine Ultraclean</strong></h4>
         <img src="http://iamprithaj.com/listerineflossjpg" style="width:100px;">
         <h5><strong>Price</strong> $3.99 </h5>
-        <button class="btn btn-default" aria-haspopup="true" aria-expanded="false">Buy</button>
+        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
         <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
 
       </div>
@@ -63,7 +63,7 @@ a:active {
         <h4>Reach Total Care</h4>
         <img src="http://iamprithaj.com/reachfloss.jpg" style="width:100px;">
         <h5><strong>Price</strong> $5.99</h5>
-        <button class="btn btn-default" aria-haspopup="true" aria-expanded="false">Buy</button>
+        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
         <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
 
       </div>
@@ -71,7 +71,7 @@ a:active {
         <h4>Oral B Glide</h4>
         <img src="http://iamprithaj.com/OralBFloss.jpg" style="width:100px;">
         <h5><strong>Price</strong> $15.49</h5>
-        <button class="btn btn-default" aria-haspopup="true" aria-expanded="false">Buy</button>
+        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
         <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
 
       </div>
@@ -79,11 +79,35 @@ a:active {
         <h4>Supersmile Professional Whitening Floss</h4>
         <img src="http://iamprithaj.com/supersmile.jpg" style="width:100px;">
         <h5><strong>Price</strong> $9.00</h5>
-        <button class="btn btn-default" aria-haspopup="true" aria-expanded="false">Buy</button>
+        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
         <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
 
       </div>
       <!--end of products-->
+
+      <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        <div class="modal-title" id="myModalLabel"><!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" border="0" alt="PayPal Logo"></a></td></tr></table><!-- PayPal Logo --></div>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+  <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Make Purchase</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   </div>
 </div>
@@ -96,8 +120,10 @@ a:active {
 
   </footer>
 
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
 
 </body></html>
