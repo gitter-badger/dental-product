@@ -1,0 +1,103 @@
+<html><head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--Google Web Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet" type="text/css">
+<style>
+   a:link {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:visited {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:hover {
+    text-decoration: none;
+   color: #eee;
+}
+
+a:active {
+    text-decoration: none;
+   color: #eee;
+}
+	body{
+		font-family: 'Bitter', serif;
+
+	}
+  #white{
+
+  		-webkit-filter:invert(100%);
+  }
+
+  </style>
+</head>
+<body cz-shortcut-listen="true">
+<div class="container-fluid">
+	<div class="jumbotron text-center" style="
+    color: aliceblue;
+    background-color: black;
+">
+  		<img src="http://iamprithaj.com/dental-floss.png" id="white">
+		<h1><strong>Floss</strong></h1>
+    <h2>Take a look at our wide variety of floss!</h2>
+		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a></h6>
+	</div>
+</div>
+
+<div class="container-fluid text-center">
+  <div class="jumbotron">
+  <h3><strong>&#8220;I was never afraid of anything in the world except the dentist.&#8221; &#8212; Taylor Caldwell</strong></h3>
+  <!--start of products-->
+      <div class="container-fluid product">
+        <h4><strong>Listerine Ultraclean</strong></h4>
+        <img src="http://iamprithaj.com/listerineflossjpg" style="width:100px;">
+        <h5><strong>Price</strong> $3.99 </h5>
+        <button class="btn btn-default" aria-haspopup="true" aria-expanded="false">Buy</button>
+        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
+
+      </div>
+          <div class="container-fluid product">
+        <h4>Reach Total Care</h4>
+        <img src="http://iamprithaj.com/reachfloss.jpg" style="width:100px;">
+        <h5><strong>Price</strong> $5.99</h5>
+        <button class="btn btn-default" aria-haspopup="true" aria-expanded="false">Buy</button>
+        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
+
+      </div>
+          <div class="container-fluid product">
+        <h4>Oral B Glide</h4>
+        <img src="http://iamprithaj.com/OralBFloss.jpg" style="width:100px;">
+        <h5><strong>Price</strong> $15.49</h5>
+        <button class="btn btn-default" aria-haspopup="true" aria-expanded="false">Buy</button>
+        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
+
+      </div>
+          <div class="container-fluid product">
+        <h4>Supersmile Professional Whitening Floss</h4>
+        <img src="http://iamprithaj.com/supersmile.jpg" style="width:100px;">
+        <h5><strong>Price</strong> $9.00</h5>
+        <button class="btn btn-default" aria-haspopup="true" aria-expanded="false">Buy</button>
+        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
+
+      </div>
+      <!--end of products-->
+
+  </div>
+</div>
+<footer style="background-color:black; color:aliceblue;height: 129px;">
+  <div class="text-center" style="
+    padding-top: 18px;">
+    <h6>made with <strong>mojolicious</strong>&#169;</h6>
+    <p>by <strong>Prithaj, Danny, Rahul, Trevan</strong> and <strong>Sergio</strong> | State University of New York College at Plattsburgh</p>
+  </div>
+
+  </footer>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+</body></html>

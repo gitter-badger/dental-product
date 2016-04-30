@@ -2,7 +2,7 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!--Google Web Fonts-->
-<link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet" type="text/css">
 <style>
    a:link {
     text-decoration: none;
@@ -27,20 +27,10 @@ a:active {
 		font-family: 'Bitter', serif;
 
 	}
+  #white{
 
-
-  img{
-  	transition-duration:0.4s;
-  	cursor:pointer;
+  		-webkit-filter:invert(100%);
   }
-
-  img:hover{
-
-      -webkit-filter: invert(70%);
-
-  }
-
-
 
   </style>
 </head>
@@ -50,29 +40,24 @@ a:active {
     color: aliceblue;
     background-color: black;
 ">
-		<h1><strong>PSU Dental</strong></h1>
+  		<img src="http://iamprithaj.com/toothbrush.png" id="white">
+		<h1><strong>Toothbrushes</strong></h1>
+    <h2>Take a look at our wide variety of toothbrushes!</h2>
 		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a></h6>
 	</div>
 </div>
 
 <div class="container-fluid text-center">
   <div class="jumbotron">
-  <h1><strong>CATEGORY</strong></h1>
-<p>Toothbrush</p>
- <img src="http://iamprithaj.com/toothbrush.png">
-<p>Toothpaste</p>
-  <img src="http://iamprithaj.com/hygienic-items.png">
-<p>Floss</p>
- <img src="http://iamprithaj.com/dental-floss.png">
-<p>Mouthwash</p>
-<img src="http://iamprithaj.com/mouthwash.png"/>
+  <h3><strong>&#8220;Trips to the dentist, I like to postpone that kind of thing.&#8221; &#8212; Johnny Depp</strong></h3>
+
+
   </div>
 </div>
 <footer style="background-color:black; color:aliceblue;height: 129px;">
   <div class="text-center" style="
-    padding-top: 18px;
-">
-    <h6>made with <strong>mojolicious</strong>©</h6>
+    padding-top: 18px;">
+    <h6>made with <strong>mojolicious</strong>&#169;</h6>
     <p>by <strong>Prithaj, Danny, Rahul, Trevan</strong> and <strong>Sergio</strong> | State University of New York College at Plattsburgh</p>
   </div>
 
@@ -80,5 +65,6 @@ a:active {
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
 </body></html>
