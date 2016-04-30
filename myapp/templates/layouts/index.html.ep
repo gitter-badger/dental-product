@@ -28,6 +28,20 @@ a:active {
 
 	}
 
+  
+  img{
+  	transition-duration:0.4s;
+  	cursor:pointer;
+  }
+  
+  img:hover{
+  
+      -webkit-filter: invert(70%);
+  
+  }
+
+
+
   </style>
 </head>
 <body cz-shortcut-listen="true">
@@ -54,7 +68,15 @@ a:active {
 <img src="http://iamprithaj.com/mouthwash.png"/>
   </div>
 </div>
-
+<footer style="background-color:black; color:aliceblue;height: 129px;">
+  <div class="text-center" style="
+    padding-top: 18px;
+">
+    <h6>made with <strong>mojolicious</strong>©</h6>
+    <p>by <strong>Prithaj, Danny, Rahul, Trevan</strong> and <strong>Sergio</strong> | State University of New York College at Plattsburgh</p> 
+  </div>
+  
+  </footer>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

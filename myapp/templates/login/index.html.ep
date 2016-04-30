@@ -1,3 +1,4 @@
+
 % layout 'default';
 %= form_for index => begin 
     % if (param 'user') {
