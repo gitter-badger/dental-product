@@ -1,3 +1,7 @@
+% my $dbh=$c->database->getHandle();                                                                                                                 
+% my $sth=$dbh->prepare("SELECT productname, brand, unitprice, unitmeasure, description, quantity, instock FROM product WHERE category='toothbrush'");                 
+% $sth->execute;                                                                                                                                   
+
 <html><head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -51,6 +55,16 @@ a:active {
   <div class="jumbotron">
   <h3><strong>&#8220;Trips to the dentist, I like to postpone that kind of thing.&#8221; &#8212; Johnny Depp</strong></h3>
   <!--start of products-->
+<table>
+       % while (my $row = $sth->fetchrow_arrayref) {                                                                                                                                                                                       
+        <tr>
+        % for my $data (@$row) {                                                                                                                    
+          <td><%= $data %></td>
+          % }                                                                                                                                              </tr>                                                                                                                                        
+    % }
+</table>  
+
+
       <div class="container-fluid product">
         <h4><strong>Philips Sonicare</strong></h4>
         <img src="http://iamprithaj.com/philsonic.jpg" style="width:100px;">
