@@ -39,7 +39,6 @@ a:active {
   </style>
 </head>
 <body cz-shortcut-listen="true">
-<div class="container-fluid">
 	<div class="jumbotron text-center" style="
     color: aliceblue;
     background-color: black;
@@ -49,7 +48,6 @@ a:active {
     <h2>Take a look at our wide variety of Mouthwash!</h2>
 		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a></h6>
 	</div>
-</div>
 
 <div class="container-fluid text-center">
   <div class="jumbotron">
