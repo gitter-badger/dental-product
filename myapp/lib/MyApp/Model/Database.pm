@@ -49,7 +49,7 @@ sub register($$$$$$)
 }
 
 #Shows all the products
-sub showresults($$$$$$$$$) {
+sub showresults() {
     my $self = shift;
     my $category = shift;
     my $unitprice = shift;
@@ -61,12 +61,24 @@ sub showresults($$$$$$$$$) {
     my $stock = shift; 
     my $dbh=$self->getHandle();
 
-    my $sth=$dbh->prepare('Select category, unitprice, unitmeasure, brand, productname, description, quantity, stock from product');
+    my $sth=$dbh->prepare('Select category, unitprice, unitmeasure, brand, productname, description, quantity, instock from product');
     die "Prepare statement failed" , $dbh->errstr unless($sth);
 
-    my $rv=$sth->execute($category, $unitprice, $unitmeasure, $brand, $productname, $description, $quantity, $stock);
-    die "Execute failed", $sth->errstr unless($rv);
-    die "Execute failed", $sth->errstr if($sth->err);
+    my $rv=$sth->execute();
+    while (my @row = $sth->fetchrow_array) {
+#	my $category = $row[0];
+#	my $unitprice = $row[1];
+#	my $unitmeasure = $row[2];
+#	my $brand = $row[3];
+#	my $productname = $row[4];
+#	my $description = $row[5];
+#	my $quantity = $row[6];
+#	my $instock = $row[7];
+
+	print "Category: $row[0]  Unitprice: $row[1] Unitmeasure: $row[2] Brand: $row[3] Productname: $row[4] Description: $row[5] Quantity: $row[6] Instock: $row[7]\n";
+    }
+    #die "Execute failed", $sth->errstr unless($rv);
+    #die "Execute failed", $sth->errstr if($sth->err);
 }
 
 

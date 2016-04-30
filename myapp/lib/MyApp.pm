@@ -1,3 +1,6 @@
+use strict;
+use warnings;
+
 package MyApp;
 use Mojo::Base 'Mojolicious';
 
@@ -10,9 +13,10 @@ sub startup {
 
     $self->secrets(['Mojolicious rocks']);
     $self->helper(users => sub { state $users = MyApp::Model::Users->new });
+    $self->helper(database => sub { state $database = MyApp::Model::Database->new });
 
     my $r = $self->routes;
-    $r->any('/')->to('layouts#index')->name('index');
+    $r->any('/')->to('layouts#index')->name('mainpage');
 
     my $logged_in = $r->under('/')->to('login#logged_in');
     $logged_in->get('/protected')->to('login#protected');
@@ -20,6 +24,10 @@ sub startup {
     $r->get('/logout')->to('login#logout');
     $r->get('/login')->to('login#index');
     $r->get('/register')->to('register#register');
+    $r->get('/brush')->to('layouts#toothbrush');
+    $r->get('/paste')->to('layouts#toothpaste');
+    $r->get('/floss')->to('layouts#floss');
+    $r->get('/wash')->to('layouts#mouthwash');
 
 }
 1;

@@ -65,13 +65,13 @@ a:active {
   <div class="jumbotron">
   <h1><strong>Categories</strong></h1>
 <p>Toothbrush</p>
- <img src="http://iamprithaj.com/toothbrush.png">
+<a href="/brush"> <img src="http://iamprithaj.com/toothbrush.png"></a>
 <p>Toothpaste</p>
-  <img src="http://iamprithaj.com/hygienic-items.png">
+<a href="/paste"> <img src="http://iamprithaj.com/hygienic-items.png"></a>
 <p>Floss</p>
- <img src="http://iamprithaj.com/dental-floss.png">
+<a href="/floss"> <img src="http://iamprithaj.com/dental-floss.png"></a>
 <p>Mouthwash</p>
-<img src="http://iamprithaj.com/mouthwash.png"/>
+<a href="/wash"><img src="http://iamprithaj.com/mouthwash.png"/></a>
   </div>
 </div>
 <footer style="background-color:black; color:aliceblue;height: 129px;">
