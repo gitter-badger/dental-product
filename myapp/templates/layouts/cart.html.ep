@@ -38,26 +38,52 @@ a:active {
 ">
 		<h1><strong>Shopping Cart</strong></h1>
 		
-	<h6><a href="/login">add to chart </a> | <a href="/register        "> checkout </a></h6></div>
+	<h6><a href="/register        "> checkout </a></h6></div>
 </div>
   
 <div class="container-fluid text-center">
   <div class="jumbotron">
-  <h1><strong>Products</strong></h1>
-<p>Toothbrush</p>
- <img src="http://iamprithaj.com/toothbrush.png">
-<p>Toothpaste</p>
-  <img src="http://iamprithaj.com/hygienic-items.png">
-<p>Floss</p>
- <img src="http://iamprithaj.com/dental-floss.png">
-<p>Mouthwash</p>
-<img src="http://iamprithaj.com/mouthwash.png">
-  </div>
-</div>
+  <h1><strong>Your items</strong></h1>
+<!-- shopping cart starts -->
+      <table id="cart" width="100%" border="0" cellpadding="4" cellspacing="4" align="center"><!--  class="table-responsive" -->
+		<thead>
+		    <tr class="cart-header">
+				<td align="center">Item</td>
+				<td width="65%" align="center"><span class="narrow-hide">Description</span></td>
+				<td class="tdnarrow" align="right">Price</td>
+				<td class="tdnarrow" align="center">Qty</td>
+				<td class="tdnarrow" align="right">Total</td>
+				<td class="tdnarrow" align="center"><span class="hidden-xs">Delete</span><span class="visible-xs"><i class="fa fa-times"></i></span></td>
+				
+		    </tr>
+		</thead>
+    
+    <tbody><tr class="cart-item">
+      <td colspan="2">
+      	<span class="cart-itemid"><a href="http://www.surfshopcart.com/cgi-bin/demos/1/shop.cgi?ud=AAENBgUCCw4BABQREBIUFwkABAAABAUHAQIcHQAA&amp;c=detail.htm&amp;itemid=127catnip&amp;storeid=1">127catnip</a></span>
+		<span class="text-highlight"></span>
+		</td>
+      <td align="right">
+      </td><td align="center"><div style="padding: 0 4px; text-align: right;"><input size="3" name="modify_1" value="0"></div></td>
+      <td align="right">
+      </td><td align="center"><!---set---><!---set---><input name="delete_1" value="0" type="checkbox"></td>
+      
+   
+    
+</tr></tbody><tfoot>
+			<tr>
+				<td colspan="6">
+					<input name="updater" class="btn btn-white pull-right" value="Update Cart" type="submit">
+					<input name="fromcat" value="00004-00006" type="hidden">
+					<input name="categories" value="00004-00006" type="hidden">
+					<br>&nbsp;<br>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	
+    <!-- shopping cart ends -->
 
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-
-</body></html>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script></div></div></body></html>
