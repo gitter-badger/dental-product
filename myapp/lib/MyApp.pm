@@ -28,6 +28,6 @@ sub startup {
     $r->get('/paste')->to('layouts#toothpaste');
     $r->get('/floss')->to('layouts#floss');
     $r->get('/wash')->to('layouts#mouthwash');
-
+    $r->get('/cart')->to('layouts#cart');
 }
 1;
