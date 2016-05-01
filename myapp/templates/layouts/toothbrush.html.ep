@@ -48,7 +48,7 @@ a:active {
   		<img src="http://iamprithaj.com/toothbrush.png" id="white">
 		<h1><strong>Toothbrushes</strong></h1>
     <h2>Take a look at our wide variety of toothbrushes!</h2>
-		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a></h6>
+		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a> | <a href="/cart"> CART </a> </h6>
 	</div>
 
 <div class="container-fluid text-center">

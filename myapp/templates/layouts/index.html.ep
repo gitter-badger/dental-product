@@ -56,7 +56,7 @@ a:active {
 ">
     <img src="http://iamprithaj.com/smiling-tooth-with-hands.png"/ id="white">
 		<h1><strong>PSU Dental</strong></h1>
-		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a></h6>
+		<h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a> | <a href="/cart"> CART </a> </h6>
 	</div>
 
 

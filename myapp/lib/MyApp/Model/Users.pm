@@ -6,19 +6,20 @@ use warnings;
 use Mojo::Util 'secure_compare';
 
 my $USERS = {
-    joel => 'las3rs',
-    marcus => 'lulz',
-    sebastian => 'secr3t'
+  joel      => 'las3rs',
+  marcus    => 'lulz',
+  sebastian => 'secr3t'
 };
 
 sub new { bless {}, shift }
+
 sub check {
     my ($self, $user, $pass) = @_;
 
-    #Success
+  # Success
     return 1 if $USERS->{$user} && secure_compare $USERS->{$user}, $pass;
 
-    #Fail
+  # Fail
     return undef;
 }
 

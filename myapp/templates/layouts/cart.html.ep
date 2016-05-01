@@ -38,7 +38,7 @@ a:active {
 ">
 		<h1><strong>Shopping Cart</strong></h1>
 		
-	<h6><a href="/register        "> checkout </a></h6></div>
+	<h6><a href="/login">LOGIN </a> | <a href="/register"> REGISTER </a> | <a href="/cart"> CART </a> </h6></div>
 </div>
   
 <div class="container-fluid text-center">
