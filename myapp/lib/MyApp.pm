@@ -23,11 +23,13 @@ sub startup {
 
     $r->get('/logout')->to('login#logout');
     $r->get('/login')->to('login#index');
+    $r->post('/login')->name('do_login')->to('Login#logged_in');
     $r->get('/register')->to('register#register');
     $r->get('/brush')->to('layouts#toothbrush');
     $r->get('/paste')->to('layouts#toothpaste');
     $r->get('/floss')->to('layouts#floss');
     $r->get('/wash')->to('layouts#mouthwash');
     $r->get('/cart')->to('layouts#cart');
+
 }
 1;

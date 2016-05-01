@@ -1,14 +1,23 @@
 
 % layout 'default';
-%= form_for index => begin 
-    % if (param 'user') {
-    <b>Wrong name or password, please try again.</b><br>
-    % }
-    Name:<br>
-    %= text_field 'user'
-    <br>Password:<br>
-    %= password_field 'pass'
-    <br>
-    %= submit_button 'Login'
-% end
+<div class="container text-center">
+	<img src="http://iamprithaj.com/smiling-tooth-with-hands.png" id="white">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+<form action="/login" method="POST">
+    <label for="username">Username</label>
+	<div class="input-group">
+    <input class="form-control" name="username" type="text">
+
+    <label for="password">Password</label>
+    <input class="form-control" name="password" type="password">    
+		</div>
+  <br>
+      <input class="btn btn-default" type="submit" value="Log in">
+</form>
+        </div>
+      </div>
+    	</div>
+
+
 
