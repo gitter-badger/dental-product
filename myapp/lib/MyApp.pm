@@ -30,6 +30,6 @@ sub startup {
     $r->get('/floss')->to('layouts#floss');
     $r->get('/wash')->to('layouts#mouthwash');
     $r->get('/cart')->to('layouts#cart');
-
+    $r->get('/search')->to('layouts#search');
 }
 1;
