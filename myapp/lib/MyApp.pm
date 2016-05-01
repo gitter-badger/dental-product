@@ -17,14 +17,6 @@ sub startup {
 
     my $r = $self->routes;
     $r->any('/')->to('layouts#index')->name('mainpage');
-
-    my $logged_in = $r->under('/')->to('login#logged_in');
-    $logged_in->get('/protected')->to('login#protected');
-
-    $r->get('/logout')->to('login#logout');
-    $r->get('/login')->to('login#index');
-    $r->post('/login')->name('do_login')->to('Login#logged_in');
-    $r->get('/register')->to('register#register');
     $r->get('/brush')->to('layouts#toothbrush');
     $r->get('/paste')->to('layouts#toothpaste');
     $r->get('/floss')->to('layouts#floss');
