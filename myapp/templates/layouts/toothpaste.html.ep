@@ -114,7 +114,7 @@ a:active {
         <h5><strong>Price</strong> $4.78</h5>
         <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
         <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
+	
       </div>
       <!--end of products-->
 
@@ -128,15 +128,20 @@ a:active {
         <div class="modal-title" id="myModalLabel"><!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" border="0" alt="PayPal Logo"></a></td></tr></table><!-- PayPal Logo --></div>
       </div>
       <div class="modal-body">
-        <div class="input-group">
-          <span class="input-group-addon" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        <div class="input-group col-xs-offset-3 col-xs-6">
+          <input type="text" class="form-control"  placeholder="Email address" aria-describedby="basic-addon1">
         </div>
-  <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+	<br />
+	<div class="input-group col-xs-offset-3 col-xs-6">
+  	<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+	</div>
+	<br />
+	<button type="button" class="btn btn-primary" style="padding: 10px 110px 10px 110px;">Login In</button>
+	<br />
+	 <a href="https://www.paypal.com/uk/cgi-bin/webscr?cmd=_flow&SESSION=NJyPYlMArcY0lnvpI4HS7C7GFNQyD9mkK1nhDH-RRds_8i6SW3zCmPa9rQe&dispatch=c70bbe41527861c2b97c3d1f6a850acfdd2fbb19a3d47242b071efa252ac2167e47ebd1fddf0fdac405807ed18ad8bf872de289abf319c26" id="forgotPasswordModal" class="scTrack:unifiedlogin-click-forgot-password" style="color:#286090;">Having trouble logging in?</a> 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Make Purchase</button>
+      <div class="modal-footer ">
+	<button type="button" class="btn btb-default col-xs-offset-3 col-xs-6" style="padding: 10px 110px 10px 110px;">Sign up</button>
       </div>
     </div>
   </div>
