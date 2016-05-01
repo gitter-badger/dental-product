@@ -41,9 +41,9 @@ a:active {
     background-color: black;
 ">
                 <img src="http://iamprithaj.com/dental-floss.png" id="white">
-                <h1><strong>Floss</strong></h1>
-    <h2>Take a look at our wide variety of floss!</h2>
-                <h6><a href="/login">LOG IN </a> | <a href="/register"> REGISTER </a> | <a href="/cart"> CART </a> </h6>
+                <h1><strong>PSU Dental</strong></h1>
+    <h2>Search our products!</h2>
+                <h6><a href="/cart"> CART </a> </h6>
         </div>
 
 <div class="container-fluid text-center">
@@ -79,7 +79,7 @@ a:active {
 </div>
 <!-- Search products here -->
 <div class="container-fluid" style="width:500px; padding-bottom: 100px;">
-  <h2>Searching Products</h2>
+  <h2><strong></strong>Looking For Something?</h2>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#brand">Brand</a></li>
     <li><a data-toggle="tab" href="#keyword">Keyword</a></li>
@@ -94,7 +94,7 @@ a:active {
         <label for="searchbrand"><h3>Search by brand name:</h3></label>
         <input type="text" class="form-control" id="searchbrand">
       </div>
-    <button type="submit" class="btn btn-default" style="float: right; margin-top: 10px">&#128269;</button>
+    <button type="submit" class="btn btn-default" style="float: right; margin-top: 10px">&#128269;<span class="glyphicon glyphicon-search"></span> </button>
     </form>
   </div>
 
@@ -104,7 +104,7 @@ a:active {
         <label for="searchkw"><h3>Search by key word:</h3></label>
         <input type="text" class="form-control" id="searchkw">
       </div>
-      <button type="submit" class="btn btn-default" style="float: right; margin-top: 10px">&#128269;</button>
+      <button type="submit" class="btn btn-default" style="float: right; margin-top: 10px">&#128269;<span class="glyphicon glyphicon-search"></span></button>
     </form>
   </div>
   
@@ -120,7 +120,7 @@ a:active {
         <option>Yard</option>
       </select>
       </div>
-      <button type="submit" class="btn btn-default" style="float: right; margin-top: 10px">&#128269;</button>
+      <button type="submit" class="btn btn-default" style="float: right; margin-top: 10px">&#128269;<span class="glyphicon glyphicon-search"></span> </button>
     </form>
   </div>
   
@@ -141,7 +141,7 @@ a:active {
       </div>
     </div>
     </div>
-    <button type="submit" class="btn btn-default" style="float: right; margin-top: 10px">&#128269;</button>
+    <button type="submit" class="btn btn-default" style="float: right; margin-top: 10px">&#128269;<span class="glyphicon glyphicon-search"></span> </button>
     </form>
   </div>
 

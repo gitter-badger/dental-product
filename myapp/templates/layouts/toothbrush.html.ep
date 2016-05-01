@@ -78,7 +78,7 @@ a:active {
         % for my $data (@$row) {                                                                                                                    
           <td><%= $data %></td><br>
           % }
-        <td><button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button></td>
+        <td><button class="btn btn-success addcart" aria-haspopup="true" aria-expanded="false">Add to cart</button></td>
 	<td><button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button> </td>
 	</tr>
     % }  
@@ -159,6 +159,8 @@ a:active {
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+<script>
+$('.addcart').click(function(event){ $(this).hide().css('background-color','#D40202').html('Added to Cart').fadeIn();  });
+</script>
 
 </body></html>
