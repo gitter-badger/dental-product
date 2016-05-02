@@ -56,7 +56,7 @@ a:active {
 ">
     <img src="http://iamprithaj.com/smiling-tooth-with-hands.png"/ id="white">
 		<h1><strong>PSU Dental</strong></h1>
-		<h6><a href="/cart"> CART </a> </h6>
+		<h6><a href="/cart"> CART </a> | <a href="/search">SEARCH</a> </h6>
 	</div>
 
 <div class="container-fluid text-center">

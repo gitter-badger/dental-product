@@ -23,5 +23,6 @@ sub startup {
     $r->get('/wash')->to('layouts#mouthwash');
     $r->get('/cart')->to('layouts#cart');
     $r->get('/search')->to('layouts#search');
+    $r->get('/addcart')->to('addcart#add_cart');
 }
 1;

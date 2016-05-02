@@ -43,7 +43,7 @@ a:active {
                 <img src="http://iamprithaj.com/dental-floss.png" id="white">
                 <h1><strong>PSU Dental</strong></h1>
     <h2>Search our products!</h2>
-                <h6><a href="/cart"> CART </a> </h6>
+                <h6><a href="/cart"> CART </a> |  <a href="/"> HOME</a></h6>
         </div>
 
 <div class="container-fluid text-center">

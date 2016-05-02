@@ -39,7 +39,7 @@ a:active {
 ">
 		<h1><strong>Shopping Cart</strong></h1>
 		
-	<h6><a href="/cart"> CART </a> </h6>
+	<h6><a href="/">HOME</a> | <a href="/search">SEARCH</a></h6>
 </div>
   
 <div class="container-fluid text-center">
