@@ -10,7 +10,7 @@ use DBD::mysql;
 
 sub new
 { my $class=shift;
-  my $dbh=DBI->connect("dbi:mysql:dfan001","dfan001_dbo",'CbQx5yuBqb',{AutoCommit => 1});
+  my $dbh=DBI->connect("dbi:mysql:dfan001","dfan001_dentalwb",'XSmYFnE36b',{AutoCommit => 1});
   die "database connect error:", $DBI::errstr unless($dbh);
   my $self=\$dbh;
   bless $self, $class;
