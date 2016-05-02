@@ -74,7 +74,7 @@ a:active {
   % while (my $row = $sth->fetchrow_arrayref) {                                                                                                
         <tr>                         
         % for my $data (@$row) {                                                                                                                    
-          <td><%= $data %></td><br>
+          <td><%= $data %></td>
           % }
         <td><button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button></td>
         <td><button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button> </td>
@@ -83,39 +83,6 @@ a:active {
    </tbody>
 </table>
 </div>   
-
-   <div class="container-fluid product">
-        <h4><strong>Equate Blue Mint</strong></h4>
-        <img src="http://iamprithaj.com/bluemint.jpg" style="width:100px;">
-        <h5><strong>Price</strong> $5.54 </h5>
-        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
-        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
-      </div>
-          <div class="container-fluid product">
-        <h4>Listerine Original</h4>
-        <img src="http://iamprithaj.com/originallist.jpg" style="width:100px;">
-        <h5><strong>Price</strong> $5.97</h5>
-        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
-        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
-      </div>
-          <div class="container-fluid product">
-        <h4>Act Total Care</h4>
-        <img src="http://iamprithaj.com/act.jpg" style="width:100px;">
-        <h5><strong>Price</strong> $4.65</h5>
-        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
-        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
-      </div>
-          <div class="container-fluid product">
-        <h4>Colgate Total Advanced</h4>
-        <img src="http://iamprithaj.com/colwash.jpg" style="width:100px;">
-        <h5><strong>Price</strong> $5.96</h5>
-        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
-        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
-      </div>
       <!--end of products-->
 
       <!-- Modal -->

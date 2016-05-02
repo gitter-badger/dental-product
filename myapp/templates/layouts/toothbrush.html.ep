@@ -76,7 +76,7 @@ a:active {
   % while (my $row = $sth->fetchrow_arrayref) {                                                                                                
         <tr>                         
         % for my $data (@$row) {                                                                                                                    
-          <td><%= $data %></td><br>
+          <td><%= $data %></td>
           % }
         <td><button class="btn btn-success addcart" aria-haspopup="true" aria-expanded="false">Add to cart</button></td>
 	<td><button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button> </td>
@@ -86,38 +86,6 @@ a:active {
 </table>
 </div>
 
-      <div class="container-fluid product">
-        <h4><strong>Philips Sonicare</strong></h4>
-        <img src="http://iamprithaj.com/philsonic.jpg" style="width:100px;">
-        <h5><strong>Price</strong> $39.99 </h5>
-        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
-        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
-      </div>
-          <div class="container-fluid product">
-        <h4>Oral B 7000</h4>
-        <img src="http://iamprithaj.com/oralb7000.jpg" style="width:100px;">
-        <h5><strong>Price</strong> $119.97</h5>
-        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
-        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
-      </div>
-          <div class="container-fluid product">
-        <h4>Colgate MaxWhite</h4>
-        <img src="http://iamprithaj.com/colmax.jpg" style="width:100px;">
-        <h5><strong>Price</strong> $2.00</h5>
-        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
-        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
-      </div>
-          <div class="container-fluid product">
-        <h4>Reach Advanced</h4>
-        <img src="http://iamprithaj.com/reachbrush.jpg" style="width:100px;">
-        <h5><strong>Price</strong> $5.97</h5>
-        <button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Buy</button>
-        <button class="btn btn-success" aria-haspopup="true" aria-expanded="false">Add to cart</button>
-
-      </div>
       <!--end of products-->
       <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
