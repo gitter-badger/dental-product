@@ -15,8 +15,7 @@ Why this website exists
 	 * Integrated the View with the Model and the Controller
  * **Sergio Andujar**
  * **Rahul Arora**
- * **Trevan Albright**
-                                                                               ###How it works
+ * **Trevan Albright**                                                         ###How it works
 
 Purpose of files and folders go here
 
@@ -40,7 +39,7 @@ myapp                      # Application directory
    |  +- default.html.ep   
    +- example             
       +- welcome.html.ep                                                       ```
-                                                                               ##Install
+##Install
 
 In order to get started with our application, you would need to have Git installed in our system.
 
