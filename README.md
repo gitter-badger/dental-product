@@ -53,11 +53,29 @@ In order to get started with our application, you would need to have Git install
 	sudo apt-get install git
 ```
 
-This should install Git in your system. Just to make sure, run the following command which tell you which version of Git you have installed.
+This should install Git in your system. Just to make sure, run the following command which tells you which version of Git you have installed.
 
 ```
  git --version
 
 ``` 
+Now, you would have to clone our GitHub repository in order to get access to our files. Run the following command to create a local copy of our GitHub repo in whichever folder you may please.
 
+```
+ git clone https://github.com/dfan001/dental-product.git
+
+```
                                                                                                                                                                                                                                      
+Now that you have a copy of our GitHub repo, you can start our application using Morbo. Navigate to the **my_app** file using the above diagram and run the following command
+
+```
+morbo my_app
+
+```
+You should see something like this after you run this command
+
+```
+Server available at http://127.0.0.1:7992
+
+```
+Keep in mind that you can have a different port number. As long as you don't get any errors, you're all set!!
