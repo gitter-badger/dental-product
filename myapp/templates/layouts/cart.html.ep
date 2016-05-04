@@ -1,3 +1,7 @@
+% my $dbh=$c->database->getHandle();                                                                                                                
+% my $sth=$dbh->prepare("SELECT item, price FROM shoppingcart");
+% $sth->execute;
+
 <html><head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -23,68 +27,105 @@ a:active {
     text-decoration: none;
    color: #eee;
 }
-	body{
-		font-family: 'Bitter', serif;
+        body{
+                font-family: 'Bitter', serif;
 
-	}
+        }
+  #white{
+
+                -webkit-filter:invert(100%);
+  }
 
   </style>
 <title>PSU Dental | Cart</title>
 </head>
 <body cz-shortcut-listen="true">
-<div class="container-fluid">
-	<div class="jumbotron text-center" style="
+        <div class="jumbotron text-center" style="
     color: aliceblue;
     background-color: black;
 ">
-		<h1><strong>Shopping Cart</strong></h1>
-		
-	<h6><a href="/">HOME</a> | <a href="/search">SEARCH</a></h6>
-</div>
-  
+                <img src="http://iamprithaj.com/dental-floss.png" id="white">
+                <h1><strong>Cart</strong></h1>
+    <h2>Take a look at our wide variety of floss!</h2>
+                <h6><a href="/cart"> CART </a> </h6>
+        </div>
+
 <div class="container-fluid text-center">
   <div class="jumbotron">
-  <h1><strong>Your items</strong></h1>
-<!-- shopping cart starts -->
-      <table id="cart" width="100%" border="0" cellpadding="4" cellspacing="4" align="center"><!--  class="table-responsive" -->
-		<thead>
-		    <tr class="cart-header">
-				<td align="center">Item</td>
-				<td width="65%" align="center"><span class="narrow-hide">Description</span></td>
-				<td class="tdnarrow" align="right">Price</td>
-				<td class="tdnarrow" align="center">Qty</td>
-				<td class="tdnarrow" align="right">Total</td>
-				<td class="tdnarrow" align="center"><span class="hidden-xs">Delete</span><span class="visible-xs"><i class="fa fa-times"></i></span></td>
-				
-		    </tr>
-		</thead>
-    
-    <tbody><tr class="cart-item">
-      <td colspan="2">
-      	<span class="cart-itemid"><a href="http://www.surfshopcart.com/cgi-bin/demos/1/shop.cgi?ud=AAENBgUCCw4BABQREBIUFwkABAAABAUHAQIcHQAA&amp;c=detail.htm&amp;itemid=127catnip&amp;storeid=1">127catnip</a></span>
-		<span class="text-highlight"></span>
-		</td>
-      <td align="right">
-      </td><td align="center"><div style="padding: 0 4px; text-align: right;"><input size="3" name="modify_1" value="0"></div></td>
-      <td align="right">
-      </td><td align="center"><!---set---><!---set---><input name="delete_1" value="0" type="checkbox"></td>
-      
-   
-    
-</tr></tbody><tfoot>
-			<tr>
-				<td colspan="6">
-					<input name="updater" class="btn btn-white pull-right" value="Update Cart" type="submit">
-					<input name="fromcat" value="00004-00006" type="hidden">
-					<input name="categories" value="00004-00006" type="hidden">
-					<br>&nbsp;<br>
-				</td>
-			</tr>
-		</tfoot>
-	</table>
-	
-    <!-- shopping cart ends -->
+  <h3><strong>&#8220;I was never afraid of anything in the world except the dentist.&#8221; &#8212; Taylor Caldwell</strong></h3>
+  <!--start of products-->
+<div class="container-fluid product">  
+<table class="table">
+    <thead>
+<tr>
+<th>Product Name: </th>
+<th>Unit Price: </th>
+</tr>
+</thead>
+  
+    <tbody>
+  % while (my $row = $sth->fetchrow_arrayref) {                                                                                                
+        <tr>                         
+        % for my $data (@$row) {                                                                                                                    
+          <td><%= $data %></td>
+          % }
+        <td><button class="btn btn-warning" aria-haspopup="true" aria-expanded="false">Remove item</button></td>
+        </tr>
+    % }  
+	<tr>
+	<td><button class="btn btn-default buy" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target="#myModal">Checkout</button></td>
+	</tr>
+
+   </tbody>
+</table>
+</div>
+                                                                                             
+      <!--end of products-->
+
+      <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        <div class="modal-title" id="myModalLabel"><!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" border="0" alt="PayPal Logo"></a></td></tr></table><!-- PayPal Logo --></div>
+      </div>
+      <div class="modal-body">
+        <div class="input-group col-xs-offset-3 col-xs-6">
+          <input type="text" class="form-control"  placeholder="Email address" aria-describedby="basic-addon1">
+        </div>
+        <br />
+        <div class="input-group col-xs-offset-3 col-xs-6">
+        <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+        </div>
+        <br />
+        <button type="button" class="btn btn-primary" style="padding: 10px 110px 10px 110px;">Login In</button>
+        <br />
+         <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=ETLH3Za4gafgTzV8ZHrSxICLo5gq0PwhYLvfst85J_qZuWihBveIpm41SWy&dispatch=c70bbe41527861c2b97c3d1f6a850acfdd2fbb19a3d47242b071efa252ac2167e47ebd1fddf0fdac405807ed18ad8bf872de289abf319c26" id="forgotPasswordModal" class="scTrack:unifiedlogin-click-forgot-password" style="color:#286090;">Having trouble logging in?</a> 
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btb-default col-xs-offset-3 col-xs-6" style="padding: 10px 110px 10px 110px;">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<footer style="background-color:black; color:aliceblue;height: 129px;">
+  <div class="text-center" style="
+    padding-top: 18px;">
+    <h6>made with <strong>mojolicious</strong>&#169;</h6>
+    <p>by <strong>Prithaj, Danny, Rahul, Trevan</strong> and <strong>Sergio</strong> | State University of New York College at Plattsburgh</p>
+  </div>
+
+  </footer>
 
 
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script></div></div></body></html>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body></html>
