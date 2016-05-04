@@ -20,6 +20,7 @@ Why this website exists
 
 Purpose of files and folders go here
 
+```
 myapp                      # Application directory
 |- script                  # Script directory
 |  +- my_app               # Application script
@@ -38,7 +39,8 @@ myapp                      # Application directory
    |- layouts              
    |  +- default.html.ep   
    +- example             
-      +- welcome.html.ep                                                                                                                                       ##Install
+      +- welcome.html.ep                                                       ```
+                                                                               ##Install
 
 In order to get started with our application, you would need to have Git installed in our system.
 
