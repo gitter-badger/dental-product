@@ -83,7 +83,11 @@ Now, you would have to clone our GitHub repository in order to get access to our
 
 ```
 
-Now that you have a copy of our GitHub repo, you can start our application using Morbo. Navigate to the **my_app** file using the above diagram and run the following command
+Now that you have a copy of our GitHub repo, you can start our application using **Morbo**. In order to install Morbo, you would have to install **Mojolicious**, which is the framework we used to build our application. Run the following command to install Mojolicious in your system
+```
+$ curl -L https://cpanmin.us | perl - -M https://cpan.metacpan.org -n Mojolicious
+```
+Morbo is just a built-in development web server that comes with Mojolicious. Navigate to the **my_app** file using the above diagram and run the following command
 
 ```
 morbo my_app
