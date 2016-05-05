@@ -8,11 +8,15 @@ Why this website exists
 ###Authors
 
  * **Danny Fan**
+     * Implemented the Model and the Controller
+     * Connected the UI with the database
+     * Wrote initial Perl scripts to perform basic routing
+     * Queried data from the database and rendered it with the provided templates
  * **Prithaj Nath**
-   	 * Designed UI/UX using Bootstrap 
-	 * Implented the design in accordance with the MVC framework
-	 * Added interactivity using JQuery
-	 * Integrated the View with the Model and the Controller
+   	 * Designed UI/UX using Bootstrap
+	   * Implmented the design in accordance with the MVC framework
+	   * Added interactivity using JQuery
+	   * Integrated the View with the Model and the Controller
  * **Sergio Andujar**
  * **Rahul Arora**
  * **Trevan Albright**                                                         
@@ -29,7 +33,11 @@ myapp                      # Application directory
 |  |- MyApp.pm             # Application class
 |  +- MyApp                # Application namespace
 |     +- Controller        # Controller namespace
-|        +- Example.pm     # Controller class
+|        +- Login.pm       # Controller class
+         +- addtocart.pm
+      +- Model
+          +- Database.pm
+          +- cart.pm
 |- t                      
 |  +- basic.t             
 |- log                     
@@ -38,16 +46,25 @@ myapp                      # Application directory
 |  +- index.html         
 +- templates             
    |- layouts              
-   |  +- default.html.ep   
-   +- example             
-      +- welcome.html.ep 
+   |  +- default.html.ep
+   |  +- index.html.ep
+   |  +- cart.html.ep
+   |  +- floss.html.ep
+   |  +- mouthwash.html.ep
+   |  +- search.html.ep
+   |  +- toothbrush.html.ep
+   |  +- toothpaste.html.ep   
+
 ```
-                                                      
+
 ##Install
 
-In order to get started with our application, you would need to have Git installed in our system.
+In order to get started with our application, you would need to have the following things installed in your system.
 
-1. **Mac/Linux** - Most Linux distros and Mac OSs come with Git installed. However, if you don't have Git installed in your system, run the following command in your terminal.
+* Git
+* Morbo
+
+We'll start off with Git. Most systems come with Git installed. However, if you don't have Git installed in your system, run the following command in your terminal.
 
 ```
 	sudo apt-get install git
@@ -58,14 +75,14 @@ This should install Git in your system. Just to make sure, run the following com
 ```
  git --version
 
-``` 
+```
 Now, you would have to clone our GitHub repository in order to get access to our files. Run the following command to create a local copy of our GitHub repo in whichever folder you may please.
 
 ```
  git clone https://github.com/dfan001/dental-product.git
 
 ```
-                                                                                                                                                                                                                                     
+
 Now that you have a copy of our GitHub repo, you can start our application using Morbo. Navigate to the **my_app** file using the above diagram and run the following command
 
 ```
