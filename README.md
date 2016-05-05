@@ -67,7 +67,7 @@ In order to get started with our application, you would need to have the followi
 We'll start off with Git. Most systems come with Git installed. However, if you don't have Git installed in your system, run the following command in your terminal.
 
 ```
-	sudo apt-get install git
+sudo apt-get install git
 ```
 
 This should install Git in your system. Just to make sure, run the following command which tells you which version of Git you have installed.
