@@ -18,9 +18,10 @@ Why this website exists
 	  * Added interactivity using JQuery
 	  * Integrated the View with the Model and the Controller
  * **Sergio Andujar**
-	*designed shopping cart webpage
-	*queried data from database for the purpose of managing the chart
- * **Rahul Arora**     * Wrote initial Perl scripts to perform basic routing
+	* Designed shopping cart webpage
+	* Queried data from database for the purpose of managing the chart
+ * **Rahul Arora**     
+ 	* Wrote initial Perl scripts to perform basic routing
  * **Trevan Albright**                                                         
 
 ###How it works
