@@ -13,10 +13,10 @@ Why this website exists
 
      * Queried data from the database and rendered it with the provided templates
  * **Prithaj Nath**
-   	 * Designed UI/UX using Bootstrap
-	   * Implmented the design in accordance with the MVC framework
-	   * Added interactivity using JQuery
-	   * Integrated the View with the Model and the Controller
+   	* Designed UI/UX using Bootstrap
+	  * Implmented the design in accordance with the MVC framework
+	  * Added interactivity using JQuery
+	  * Integrated the View with the Model and the Controller
  * **Sergio Andujar**
 	*designed shopping cart webpage
 	*queried data from database for the purpose of managing the chart
