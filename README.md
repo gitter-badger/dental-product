@@ -10,7 +10,7 @@ Why this website exists
  * **Danny Fan**
      * Implemented the Model and the Controller
      * Connected the UI with the database
-     * Wrote initial Perl scripts to perform basic routing
+
      * Queried data from the database and rendered it with the provided templates
  * **Prithaj Nath**
    	 * Designed UI/UX using Bootstrap
@@ -18,7 +18,9 @@ Why this website exists
 	   * Added interactivity using JQuery
 	   * Integrated the View with the Model and the Controller
  * **Sergio Andujar**
- * **Rahul Arora**
+	*designed shopping cart webpage
+	*queried data from database for the purpose of managing the chart
+ * **Rahul Arora**     * Wrote initial Perl scripts to perform basic routing
  * **Trevan Albright**                                                         
 
 ###How it works
