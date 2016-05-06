@@ -1,5 +1,7 @@
 #PSU Dental
 
+[![Join the chat at https://gitter.im/dfan001/dental-product](https://badges.gitter.im/dfan001/dental-product.svg)](https://gitter.im/dfan001/dental-product?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 An e-commerce website for dental products for PSU students.                                                 
 ###Purpose
 
